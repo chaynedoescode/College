@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-01 02:38:01 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDk6MzM6NTAgYW07MjYwMA=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDk6MzU6MTEgYW07MTtocDtERVNLVE9QLTZBUTVRUzg7MjAyMy0xMC0yNTswOToxNDo0MCBhbTs1MzY0"/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDk6NDA6MDYgYW07MTsyNzA3"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMTswMjozODowMSBwbTsyMzszMDE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Determine which input is higher_10.23.2023"/>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter a number&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Please enter another number&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="a&amp;&quot; is Higher&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a=b">
+                        <then>
+                            <output expression="&quot;neither is higher&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="b&amp;&quot; is Higher&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 10:27:55 am"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDg6Mzg6MzMgYW07MjYwNQ=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDk6MTQ6MzEgYW07MTsyNzA2"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMzsxMDoyNzo1NSBhbTsxMDszMDA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez, Find the sum, average, and product of 3 numbers, 10.26.2023 "/>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter 3 numbers&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <output expression="&quot;The sum of the entered numbers are &quot; &amp;a+b+c&amp; &quot;. The average is &quot; &amp;(a+b+c)/3&amp; &quot;. The product is &quot; &amp;a*b*c&amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-01 02:33:31 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6MDQ6NDQgYW07MjU5NA=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6MTI6MDUgYW07NDsyNzAx"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMTswMjozMzozMSBwbTs0MTszMDE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Output the grades with corresponding remarks_10.26.2023"/>
+            <declare name="grade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the grade.&quot;" newline="True"/>
+            <input variable="grade"/>
+            <if expression="grade &gt;= 90 and grade&lt;=100">
+                <then>
+                    <output expression="&quot;Excellent&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="grade &gt;= 80 and grade&lt;100">
+                        <then>
+                            <output expression="&quot;Good&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="grade &gt;= 75 and grade&lt;100">
+                                <then>
+                                    <output expression="&quot;Fair&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="grade &gt;= 50 and grade&lt;100">
+                                        <then>
+                                            <output expression="&quot;Poor&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Out-of-range&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

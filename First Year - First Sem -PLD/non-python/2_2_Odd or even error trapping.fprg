@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 07:44:00 pm"/>
+        <attribute name="created" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMjsxMTozMzozMCBhbTsyODQy"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMzswNzo0NDowMCBwbTsxMDM7MzA2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Odd, Even, or Invalid_11.02.2023"/>
+            <declare name="input" type="String" array="False" size=""/>
+            <declare name="counter, remainder, falsecounter, convert" type="Integer" array="False" size=""/>
+            <assign variable="falsecounter" expression="0"/>
+            <output expression="&quot;Please enter a number&quot;" newline="True"/>
+            <input variable="input"/>
+            <for variable="counter" start="0" end="len(input)-1" direction="inc" step="1">
+                <if expression="ToCode(char(input,counter))&gt;=32 and ToCode(char(input,counter))&lt;=47 or ToCode(char(input,counter))&gt;=58">
+                    <then>
+                        <assign variable="falsecounter" expression="1+falsecounter"/>
+                    </then>
+                    <else>
+                        <assign variable="remainder" expression="ToCode(char(input,counter))%2"/>
+                    </else>
+                </if>
+            </for>
+            <if expression="falsecounter=0">
+                <then>
+                    <if expression="remainder=0">
+                        <then>
+                            <output expression="&quot;EVEN&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;ODD&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Invalid Input&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

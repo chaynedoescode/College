@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-01 01:15:25 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTA6MzM6MDggYW07MjU5NQ=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTA6NTY6MjcgYW07MTsyNzA5"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMTswMToxNToyNSBwbTsyNjszMDIy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Find the area of a circle whose radius is 1 to 5 with increments of 1 unit_10.26.2023"/>
+            <declare name="radius" type="Integer" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <assign variable="radius" expression="0"/>
+            <for variable="radius" start="1" end="5" direction="inc" step="1">
+                <assign variable="area" expression="3.14168*radius*radius"/>
+                <output expression="area&amp;&quot; units&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

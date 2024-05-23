@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 01:33:58 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6MzE6MzcgYW07MjU5Ng=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6MzY6MDQgYW07MjsyNzA0"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMzswMTozMzo1OCBwbTszOzI5Nzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Sum of 1,2,3,4, and 5 using FOR LOOP_10.26.2023"/>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="0"/>
+            <output expression="&quot;Sum of numbers 1,2,3,4, and 5 is &quot;" newline="True"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <assign variable="n" expression="n+i"/>
+            </for>
+            <output expression="n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

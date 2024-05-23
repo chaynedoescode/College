@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-01 12:53:47 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTA6MDU6MDkgYW07MjU5NQ=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTA6MTI6MDMgYW07MTsyNjk1"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMTsxMjo1Mzo0NyBwbTsxMzszMDI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Compute the yearly depreciation of an item_10.23.2023"/>
+            <declare name="d, p, s, y" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter purchase price.&quot;" newline="True"/>
+            <input variable="p"/>
+            <output expression="&quot;Enter expected number of years of service.&quot;" newline="True"/>
+            <input variable="y"/>
+            <output expression="&quot;Enter salvage value.&quot;" newline="True"/>
+            <input variable="s"/>
+            <assign variable="d" expression="(p-s)&#247;y"/>
+            <output expression="&quot;The item depreciates yearly by  &quot; &amp;d&amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

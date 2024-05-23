@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-02 08:56:41 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6MDQ6NDQgYW07MjU5NA=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6MTY6MjMgYW07NzsyNzA4"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMjswODo1Njo0MSBwbTs0MDszMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Determine college level_10.26.2023"/>
+            <declare name="year" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter your year level.&quot;" newline="True"/>
+            <input variable="year"/>
+            <if expression="year = 1">
+                <then>
+                    <output expression="&quot;Freshman&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="year = 2">
+                        <then>
+                            <output expression="&quot;Sophomore&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="year = 3">
+                                <then>
+                                    <output expression="&quot;Junior&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="year = 4">
+                                        <then>
+                                            <output expression="&quot;Senior&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Unlisted Level&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

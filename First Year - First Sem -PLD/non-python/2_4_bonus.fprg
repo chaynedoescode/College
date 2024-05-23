@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-01 02:01:35 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTA6NTk6MDIgYW07MjU5Nw=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6MDQ6MzQgYW07MTsyNzAx"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMTswMjowMTozNSBwbTsxMjszMDE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Print the name and bonus of an employee_10.26.2023"/>
+            <declare name="salary, bonus" type="Real" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;Enter the name of the employee.&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;How much is their salary per month?&quot;" newline="True"/>
+            <input variable="salary"/>
+            <if expression="salary &gt;= 1000">
+                <then>
+                    <assign variable="bonus" expression="1000"/>
+                </then>
+                <else>
+                    <assign variable="bonus" expression="0.5*salary"/>
+                </else>
+            </if>
+            <output expression="&quot;Employee &quot; &amp;name&amp; &quot; has a bonus of &quot; &amp;bonus&amp; &quot; pesos.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 01:35:08 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6MjI6MTggYW07MjU5NQ=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6MzE6MzYgYW07MTsyNzAz"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMzswMTozNTowOCBwbTsxMzszMDIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Sum of 1,2,3,4, and 5 using WHILE LOOP_10.26.2023"/>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <output expression="&quot;Sum of numbers 1,2,3,4, and 5 is&quot;" newline="True"/>
+            <while expression="i&lt;5">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="n" expression="n+i"/>
+            </while>
+            <output expression="n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

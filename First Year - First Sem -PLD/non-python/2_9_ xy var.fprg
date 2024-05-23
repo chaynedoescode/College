@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 01:10:02 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6NDE6MzggYW07MjU5OA=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTE6NTE6NTcgYW07MTsyNzA4"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMzswMToxMDowMiBwbTsyNDszMDEy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Find either the sum or product of two numbers_10.26.2023"/>
+            <declare name="x, y, r" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter first number&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Enter Second number&quot;" newline="True"/>
+            <input variable="y"/>
+            <if expression="x-y&lt;0">
+                <then>
+                    <assign variable="r" expression="x+y"/>
+                    <output expression="&quot;Sum of &quot;&amp;x&amp;&quot; and &quot; &amp;y&amp;&quot; is &quot;&amp;r" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="r" expression="x*y"/>
+                    <output expression="&quot;Product of &quot;&amp;x&amp;&quot; and &quot; &amp;y&amp;&quot; is &quot;&amp;r" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

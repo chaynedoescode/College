@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-01 12:32:10 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDk6NTY6NDggYW07MjYxMg=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTA6MDU6MDcgYW07MTsyNzAx"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMTsxMjozMjoxMCBwbTsyOzI5NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Convert Celsius to Fahrenheit_10.23.2023"/>
+            <declare name="celsius, fahrenheit" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter temperature in celcius. Do not Include &#176;C.&quot;" newline="True"/>
+            <input variable="celsius"/>
+            <assign variable="fahrenheit" expression="(9*celsius&#247;5)+32"/>
+            <output expression="&quot;Entered temperature is equal to &quot; &amp;fahrenheit&amp; &quot; fahrenheit.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

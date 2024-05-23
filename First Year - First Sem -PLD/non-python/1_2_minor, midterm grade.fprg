@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-31 11:24:26 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDk6MTQ6NDAgYW07MjU5OA=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDk6MzM6NDUgYW07MTsyNzEy"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMC0zMTsxMToyNDoyNiBwbTs1OzI5NzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="minor, midterm" type="Integer" array="False" size=""/>
+            <declare name="minorscore, midtermscore, grade" type="Real" array="False" size=""/>
+            <declare name="realgrade" type="String" array="False" size=""/>
+            <output expression="&quot;Please enter the total items of the minor exam.&quot;" newline="True"/>
+            <input variable="minor"/>
+            <output expression="&quot;Please enter the student's minor exam score.&quot;" newline="True"/>
+            <input variable="minorscore"/>
+            <output expression="&quot;Please enter the total items of the midterm exam.&quot;" newline="True"/>
+            <input variable="midterm"/>
+            <output expression="&quot;Please enter the student's midterm exam score.&quot;" newline="True"/>
+            <input variable="midtermscore"/>
+            <assign variable="grade" expression="((minorscore&#247;minor&#247;3) + 2*(midtermscore&#247;midterm&#247;3))*100"/>
+            <assign variable="realgrade" expression="ToFixed(grade,2)"/>
+            <output expression="&quot;You got a grade of &quot;&amp;realgrade&amp; &quot;%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

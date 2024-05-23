@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-02 08:48:11 pm"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTA6MTI6MDcgYW07MjU5MQ=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTA6MTU6MzYgYW07MTtocDtERVNLVE9QLTZBUTVRUzg7MjAyMy0xMC0yNTsxMDowNTowOSBhbTs1MzU4"/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MTA6MTY6NDggYW07MTsyNzA4"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMjswODo0ODoxMSBwbTsyMDszMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Determine if employee has regular pay or overtime pay_10.26.2023"/>
+            <declare name="hours" type="Integer" array="False" size=""/>
+            <output expression="&quot;How many hours did they work this week?&quot;" newline="True"/>
+            <input variable="hours"/>
+            <if expression="hours&gt;40">
+                <then>
+                    <output expression="&quot;OT Pay&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;RP Pay&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

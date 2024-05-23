@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hp"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-03 10:59:49 am"/>
+        <attribute name="created" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDk6NTM6NDMgYW07MjYwNA=="/>
+        <attribute name="edited" value="aHA7REVTS1RPUC02QVE1UVM4OzIwMjMtMTAtMjU7MDk6NTY6NDAgYW07MTsyNzEy"/>
+        <attribute name="edited" value="ZGVsbDtERVNLVE9QLVVITkhJRU47MjAyMy0xMS0wMzsxMDo1OTo0OSBhbTsyMTszMDE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Andrei Chayne Montanez_Accept the name and age of a student and display them_10.23.2023"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="age, counter, falsecounter" type="Integer" array="False" size=""/>
+            <assign variable="falsecounter" expression="0"/>
+            <output expression="&quot;What's your name?&quot;" newline="True"/>
+            <input variable="name"/>
+            <for variable="counter" start="0" end="len(name)-1" direction="inc" step="1">
+                <if expression="ToCode(char(name,counter))=32 or ToCode(char(name,counter))&gt;=65 and ToCode(char(name,counter))&lt;=90 or ToCode(char(name,counter))&gt;=97 and ToCode(char(name,counter))&lt;=122">
+                    <then/>
+                    <else>
+                        <assign variable="falsecounter" expression="falsecounter+1"/>
+                    </else>
+                </if>
+            </for>
+            <if expression="falsecounter=0">
+                <then>
+                    <output expression="&quot;How old are you?&quot;" newline="True"/>
+                    <input variable="age"/>
+                    <output expression="&quot;So, you are &quot; &amp;name&amp; &quot; and you are &quot; &amp;age&amp; &quot; years old also a student.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Invalid Name&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
